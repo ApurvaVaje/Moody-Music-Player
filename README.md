@@ -38,55 +38,55 @@ ALGORITHMS
 
 A) Start Algorithm
 
-Precondition: Program started.
-Postcondition: Music Player started with random song playing.
-1) Directory Chooser is shown to user, so that the choice of folder containing music can be made.
-2) All mp3 files in this folder are selected and their path is stored in a list.
-3) Their metadata is stored in a pandas dataframe.
-4) Weights of target function are initialized to (W1=1, W2=0, W3=0).
-5) Position and dislike are initialized to zero. 
-6) A window is shown on the console with label of current song and various buttons – Like, Dislike, Next Song, Previous Song, Stop Song
-7) A random song is selected from the list and it starts playing.
+	Precondition: Program started.
+	Postcondition: Music Player started with random song playing.
+	1) Directory Chooser is shown to user, so that the choice of folder containing music can be made.
+	2) All mp3 files in this folder are selected and their path is stored in a list.
+	3) Their metadata is stored in a pandas dataframe.
+	4) Weights of target function are initialized to (W1=1, W2=0, W3=0).
+	5) Position and dislike are initialized to zero. 
+	6) A window is shown on the console with label of current song and various buttons – Like, Dislike, Next Song, Previous Song, Stop Song
+	7) A random song is selected from the list and it starts playing.
 
 B) Like Button Algorithm
 
-Precondition: Like button was clicked on the music player window.
-Postcondition: Weights of the target function are changed.
-1) Weight of the variable where the position is at that instance, is incremented by 5.
-2) Dislike is set to zero.
+	Precondition: Like button was clicked on the music player window.
+	Postcondition: Weights of the target function are changed.
+	1) Weight of the variable where the position is at that instance, is incremented by 5.
+	2) Dislike is set to zero.
 
 C) Dislike Button Algorithm
 
-Precondition: Dislike button was clicked on the music player window.
-Postcondition: Weights of the target function are changed.
-1) Dislike is incremented by 1.
-2) Position goes to the next variable.
-3) The weight of position is incremented by 1.
-4) Next song function is called.
+	Precondition: Dislike button was clicked on the music player window.
+	Postcondition: Weights of the target function are changed.
+	1) Dislike is incremented by 1.
+	2) Position goes to the next variable.
+	3) The weight of position is incremented by 1.
+	4) Next song function is called.
 
 D) Next Song Button Algorithm
 
-Precondition: Next Song button was clicked on the music player window.
-Postcondition: Next song starts playing
-1) Best Song function is called to get the next to play.
-2) The song returned as best song is played.
+	Precondition: Next Song button was clicked on the music player window.
+	Postcondition: Next song starts playing
+	1) Best Song function is called to get the next to play.
+	2) The song returned as best song is played.
 
 E) Best Song Algorithm
 
-Precondition: Dataframe is filled and target weights are set.
-1) If dislike is more than 2,
-  a)Mood function is called.
-  b)Song returned by this function is returned.
-2)Else
-  a)Target function is calculated for all songs.  
-  b)The song with max value is returned.
+	Precondition: Dataframe is filled and target weights are set.
+	1) If dislike is more than 2,
+  		a)Mood function is called.
+  		b)Song returned by this function is returned.
+	2)Else
+  		a)Target function is calculated for all songs.  
+  		b)The song with max value is returned.
 
 F) Mood Algorithm
 
-Precondition: Dataframe is filled.
-1) Dislike and position are initialized to zero. 
-2) Weights are initialized to (1,0,0).
-3) A random song with a different genre than the current song is returned.
+	Precondition: Dataframe is filled.
+	1) Dislike and position are initialized to zero. 
+	2) Weights are initialized to (1,0,0).
+	3) A random song with a different genre than the current song is returned.
 
 STAGES OF PROJECT
 
