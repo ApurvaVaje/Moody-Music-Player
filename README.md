@@ -19,7 +19,8 @@ THEORY:
 Target Representation:
 
 Target function is used to predict the song the user would want to listen to next. For this reason, a target function is defined with weights varying as the program proceeds.
-T = W1G + W2Ar  + W3Al
+	
+	T = W1G + W2Ar  + W3Al
 
 	Where, G = 1, if genre(mood) of given song is same as current song.
 	    = 0, otherwise
