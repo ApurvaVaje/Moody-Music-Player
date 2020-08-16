@@ -9,9 +9,9 @@ Songs are selected on grounds of mood first and then if it does not work, artist
 As it runs on your folder you can run it on your playlist and it will be adjusted to your mood. This makes use of machine learning concept of target function for prediction of mood and selection of music.
 
 SOFTWARE REQUIREMENTS :
-Windows 10 (64 bit)
-IDLE (Python 3.6 64 bit)
-JetBrains Pycharm Community Edition 2018.3.5
+Windows 10 (64 bit) ,
+IDLE (Python 3.6 64 bit) ,
+JetBrains Pycharm Community Edition 2018.3.5 ,
 Pygame 
 
 THEORY:
